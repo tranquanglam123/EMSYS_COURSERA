@@ -10,7 +10,7 @@
  *****************************************************************************/
 /**
  * @file <stats.c> 
- * @brief <Raw function>
+ * @brief <FULLY functional>
  *
  * <Add Extended Description Here>
  *
@@ -26,6 +26,78 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
+/* Add other Implementation File Code Here */
+int find_max(unsigned char a[], int n){
+	int max = a[0];
+	for (int i = 0; i < n; i++){
+		if (a[i] >= max){
+			max = a[i];
+		}
+	}
+	printf("Max = %d", max);
+	return max;
+}
+int find_min(unsigned char a[], int n){
+	int min = a[0];
+	for (int i =0;i<n;i++){
+		if(a[i]<=min){
+			min = a[i];
+		}
+	}
+	printf("\nMin = %d", min);
+	return min;
+}
+int find_mean(unsigned char a[], int n){
+	int sum = 0;
+	float mean;
+	for (int i =0;i<n;i++){
+		sum = sum + a[i];
+	    }
+	mean = sum / (float)SIZE;
+	printf("\nMean= %.4f", mean);
+	return mean;
+}
+int swap(int p,int q) {
+   int t;
+   
+   t=p; 
+   p=q; 
+   q=t;
+}
+int sort(unsigned char a[],int n) { 
+   int i,j,temp;
+   for(i = 0;i < n-1;i++) {
+      for(j = 0;j < n-i-1;j++) {
+         if(a[j] < a[j+1])
+            swap(a[j],a[j+1]);
+      }
+   }
+   printf("\nAfter sorting, the array goes by: \n");
+   for(int i=0;i<n;i++){
+        printf(" %d ",a[i]);
+    }
+}
+int find_median(unsigned char a[], int n){
+    sort(a,n);
+    int median;
+    n = (n+1) / 2 - 1;      
+    printf("\nMedian = %d ", a[n]);
+    median = a[n];
+    return median;
+}
+int print_statistics(unsigned char a[], int n, int x, int b, int c, float d){
+    printf("\nThis is the statistics of the array: ");
+    printf("\nMaximum: %d", x);
+    printf("\nMinimum: %d", b);
+    printf("\nMean: %d", c);
+    printf("\nMedian: %f", d);
+}
+int print_array(unsigned char a[], int n){
+    printf("\nThe array goes by: \n");
+    for(int i=0;i<n;i++){
+        printf(" %d ",a[i]);
+    }
+}
 
 void main() {
 

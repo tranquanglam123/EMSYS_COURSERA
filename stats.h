@@ -24,7 +24,7 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Find the maximum value>
+ * @brief Find the maximum value
  *
  * Given the array and the size, start the loop in the array
  * to find out the max vaue
