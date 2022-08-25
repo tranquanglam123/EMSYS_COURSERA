@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.c> 
+ * @brief <Raw function>
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Lam Tran>
+ * @date <August 24th 2022 >
  *
  */
 
@@ -36,8 +36,13 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+  int max = find_max(test, SIZE);
+  int min = find_min(test, SIZE);
+  int mean = find_mean(test, SIZE);
+  int median = find_median(test, SIZE);
   /* Statistics and Printing Functions Go Here */
-
-}
-
+  print_array(test,SIZE);
+  sort(test,SIZE);
+  print_statistics(test, SIZE, max, min, mean, median);
+  }
 /* Add other Implementation File Code Here */
