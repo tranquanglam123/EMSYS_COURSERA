@@ -23,6 +23,9 @@
 #include "platform.h"
 #include "memory.h"
 
+#ifdef COURSE1
+	course1();
+#endif
 #define MAX_LENGTH (10)
 char buffer[MAX_LENGTH];
 

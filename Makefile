@@ -23,6 +23,19 @@
 #------------------------------------------------------------------------------
 include sources.mk
 
+SHELL=/bin/bash
+
+SRC_DIR := ./src
+OBJ_DIR := ./obj
+INC_DIR := ./include
+
+SOURCES = 	$(SRC_DIR)/main.c \
+			$(SRC_DIR)/memory.c \
+			$(SRC_DIR)/stats.c \
+			$(SRC_DIR)/data.c \
+			$(SRC_DIR)/course1.c 
+
+INCLUDES = -I include/common/
 # Platform Overrides
 PLATFORM = HOST
 
@@ -94,6 +107,7 @@ clean:
 	#Remove all output files created by make
 	#@echo or some shit
 	rm -f *.o *.asm *.out *.i *.map
- 
-
+#Build all and run file
+run: $(TARGET).out
+	./$(TARGET).out
 
