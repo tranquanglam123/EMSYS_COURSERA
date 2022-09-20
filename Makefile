@@ -1,6 +1,3 @@
-#******************************************************************************
-# Copyright (C) 2021 by Josh Illes
-#
 # Redistribution, modification or use of this software in source or binary
 # forms is permitted as long as the files maintain this copyright. Users are 
 # permitted to modify this and use it to learn about the field of embedded
@@ -29,7 +26,6 @@
 # -I<DIR>  Include this <DIR> to look for header files
 # -ansi -std=STANDARD  Which standard version to use (ex: c89, c99)
 # -v  Verbose output form GCC
-
 SHELL=/bin/bash
 
 SRC_DIR := ./src
@@ -56,11 +52,10 @@ VERBOSE=false
 GEN_FLAGS = -Wall \
 			-g \
 			-O0 \
-			-std=c99
-			# -Werror \
+			-std=c99\
+			-Werror 
 
 TARGET = final_assesment
-
 # Platform Dependant Variables
 ifeq ($(PLATFORM),MSP432)
 	# MSP432 dependant build options

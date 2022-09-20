@@ -1,26 +1,19 @@
 /******************************************************************************
- * Copyright (C) 2021 by Josh Illes
+ * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain the copyright found in 
- * the LICENSE file.
- *
- * THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE
+ * forms is permitted as long as the files maintain this copyright. Users are 
+ * permitted to modify this and use it to learn about the field of embedded
+ * software. Alex Fosdick and the University of Colorado are not liable for any
+ * misuse of this material. 
  *
  *****************************************************************************/
-
 /**
- * @file main.c 
- * @brief This file is the main file for the final assessment of course1.
+ * @file course1.c 
+ * @brief This file is to be used to course 1 final assessment.
  *
- * @author Josh Illes
- * @date February 25th, 2021
+ * @author Alex Fosdick
+ * @date April 2, 2017
  *
  */
 

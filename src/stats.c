@@ -1,21 +1,19 @@
 /******************************************************************************
- * Copyright (C) 2021 by @author
+ * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
- * software. Josh Illes is not liable for any misuse of this material. 
+ * software. Alex Fosdick and the University of Colorado are not liable for any
+ * misuse of this material. 
  *
  *****************************************************************************/
 /**
- * @file stats.c
- * @brief Function prototypes for providing statics on an array of numbers, 
- *   and general practice in the "C" language
+ * @file course1.c 
+ * @brief This file is to be used to course 1 final assessment.
  *
- *
- * @author Joshua Illes
- * @date 2021-02-09
- *
+ * @author Alex Fosdick
+ * @date April 2, 2017
  *
  */
 
